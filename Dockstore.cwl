@@ -56,7 +56,8 @@ steps:
       - { id: input, source: "#input" }
     outputs:
       - { id: output }
-    run: revtool.cwl
+    run: {import: revtool.cwl}
+
 
   - id: sorted
     inputs:
@@ -64,4 +65,4 @@ steps:
       - { id: reverse, source: "#reverse_sort" }
     outputs:
       - { id: output }
-    run: sorttool.cwl
+    run: {import: sorttool.cwl}
