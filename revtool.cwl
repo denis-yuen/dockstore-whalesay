@@ -5,6 +5,10 @@ class: CommandLineTool
 cwlVersion: cwl:draft-3
 description: "Reverse each line using the `rev` command"
 
+hints:
+  - class: DockerRequirement
+    dockerPull: ubuntu:14.04
+
 # The "inputs" array defines the structure of the input object that describes
 # the inputs to the underlying program.  Here, there is one input field
 # defined that will be called "input" and will contain a "File" object.
