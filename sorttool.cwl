@@ -4,6 +4,10 @@ class: CommandLineTool
 description: "Sort lines using the `sort` command"
 cwlVersion: cwl:draft-3
 
+hints:
+  - class: DockerRequirement
+    dockerPull: ubuntu:14.04
+
 # This example is similar to the previous one, with an additional input
 # parameter called "reverse".  It is a boolean parameter, which is
 # intepreted as a command line flag.  The value of "prefix" is used for
