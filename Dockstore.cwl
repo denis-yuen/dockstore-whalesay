@@ -5,6 +5,9 @@ class: Workflow
 description: "A demonstration of a CWL workflow. This reverses the lines in a document and then sorts those lines."
 cwlVersion: cwl:draft-3
 
+dct:creator: {'@id': 'http://orcid.org/0000-0002-7681-6415', 'foaf:mbox': beccyl@synapse.org,
+  'foaf:name': beccyl}
+
 # Requirements & hints specify prerequisites and extensions to the workflow.
 # In this example, DockerRequirement specifies a default Docker container
 # in which the command line tools will execute.
