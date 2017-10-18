@@ -2,7 +2,7 @@
 # This is a two-step workflow which uses "revtool" and "sorttool" defined above.
 #
 class: Workflow
-description: "A demonstration of a CWL workflow. This reverses the lines in a document and then sorts those lines."
+description: "A demonstration of a CWL workflow. This reverses the lines in a document and then sorts those lines. Because its awesome"
 cwlVersion: cwl:draft-3
 
 # Requirements & hints specify prerequisites and extensions to the workflow.
