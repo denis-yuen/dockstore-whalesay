@@ -1,2 +1,2 @@
 # dockstore-whalesay
-Whalesay dockstore files
+Whalesay dockstore files with .dockstore.yml
