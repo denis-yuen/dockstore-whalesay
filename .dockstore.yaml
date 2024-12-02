@@ -1,0 +1,9 @@
+version: 1.2
+workflows:
+  - subclass: CWL
+    primaryDescriptorPath: /Dockstore.cwl
+    testParameterFiles:
+      - /Dockstore.json
+    authors:
+      - orcid: 0000-0002-6130-1021
+    topic: A short description of the workflow
