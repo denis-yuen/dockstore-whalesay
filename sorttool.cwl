@@ -1,12 +1,9 @@
+#!/usr/bin/env cwl-runner
 # Example command line program wrapper for the Unix tool "sort"
 # demonstrating command line flags.
 class: CommandLineTool
-description: "Sort lines using the `sort` command"
-cwlVersion: cwl:draft-3
-
-hints:
-  - class: DockerRequirement
-    dockerPull: ubuntu:14.04
+doc: "Sort lines using the `sort` command"
+cwlVersion: v1.0
 
 # This example is similar to the previous one, with an additional input
 # parameter called "reverse".  It is a boolean parameter, which is

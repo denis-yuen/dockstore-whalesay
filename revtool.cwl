@@ -1,13 +1,12 @@
+#!/usr/bin/env cwl-runner
 #
 # Simplest example command line program wrapper for the Unix tool "rev".
 #
 class: CommandLineTool
-cwlVersion: cwl:draft-3
-description: "Reverse each line using the `rev` command"
-
-hints:
-  - class: DockerRequirement
-    dockerPull: ubuntu:14.04
+cwlVersion: v1.0
+doc: "Reverse each line using the `rev` command"
+$schemas:
+  - empty.ttl
 
 # The "inputs" array defines the structure of the input object that describes
 # the inputs to the underlying program.  Here, there is one input field
@@ -18,7 +17,7 @@ hints:
 # which indicates that the file name should be added to the command line at
 # a default location.
 inputs:
-  - id: input
+  input:
     type: File
     inputBinding: {}
 
@@ -28,7 +27,7 @@ inputs:
 # and after the program executes, the output value will be the file
 # output.txt in the designated output directory.
 outputs:
-  - id: output
+  output:
     type: File
     outputBinding:
       glob: output.txt
