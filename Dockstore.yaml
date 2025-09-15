@@ -2,7 +2,7 @@
 # This is a two-step workflow which uses "revtool" and "sorttool" defined above.
 #
 class: Workflow
-description: "Reverse the lines in a document, then sort those lines. This is a funky yaml descriptor"
+description: "Reverse the lines in a document, then sort those lines. This is a funky and groovy yaml descriptor"
 cwlVersion: cwl:draft-3
 
 # Requirements & hints specify prerequisites and extensions to the workflow.
