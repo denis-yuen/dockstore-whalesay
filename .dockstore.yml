@@ -6,4 +6,5 @@ workflows:
       - /Dockstore.json
     authors:
       - orcid: 0000-0002-6130-1021
+      - orcid: 0000-0003-4896-1858
     topic: A short description of the workflow with funk
